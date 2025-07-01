@@ -1,11 +1,13 @@
-# Core numerical and data packages
+# Core packages for Streamlit app
+streamlit
 numpy
 scipy
 matplotlib
-sys
-
-# For notebooks
-jupyter
-
-# Optional: for calibration or optimization
 pandas
+plotly
+
+# For financial calculations
+py-vollib  # Optional: for more advanced option pricing
+
+# Your existing requirements
+jupyter
