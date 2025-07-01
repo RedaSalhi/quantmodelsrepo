@@ -1,0 +1,42 @@
+quant_models_repo/
+├── README.md
+├── requirements.txt
+├── data/
+│   └── (optional datasets, e.g., market data samples)
+├── notebooks/
+│   ├── BlackScholes.ipynb
+│   ├── LocalVolatility.ipynb
+│   ├── StochasticVolatility.ipynb
+│   ├── JumpModels.ipynb
+│   └── HullWhiteModel.ipynb
+├── models/
+│   ├── __init__.py
+│   ├── black_scholes/
+│   │   ├── __init__.py
+│   │   ├── sde.py
+│   │   ├── pde.py
+│   ├── local_volatility/
+│   │   ├── __init__.py
+│   │   ├── local_vol.py
+│   ├── stochastic_volatility/
+│   │   ├── __init__.py
+│   │   ├── heston.py
+│   │   ├── sabr.py
+│   ├── jump_models/
+│   │   ├── __init__.py
+│   │   ├── jump_diffusion.py
+│   ├── hull_white/
+│   │   ├── __init__.py
+│   │   ├── hull_white.py
+│   │   ├── extensions.py
+├── tests/
+│   ├── test_black_scholes.py
+│   ├── test_local_volatility.py
+│   ├── test_stochastic_volatility.py
+│   ├── test_jump_models.py
+│   ├── test_hull_white.py
+├── utils/
+│   ├── __init__.py
+│   ├── math_tools.py
+│   ├── plotting.py
+│   ├── calibration.py
