@@ -1,0 +1,11 @@
+# Core numerical and data packages
+numpy
+scipy
+matplotlib
+sys
+
+# For notebooks
+jupyter
+
+# Optional: for calibration or optimization
+pandas
