@@ -1097,3 +1097,5 @@ models/
         fig_spot.add_vline(x=K, line_dash="dot", annotation_text="Strike", line_color="orange")
         fig_spot.update_layout(title="Option Values vs Stock Price", 
                              xaxis_title="Stock Price ($)", yaxis_title="Option Value ($)",
+                             template='plotly_white')
+        st.plotly_chart(fig_spot, use_container_width=True)
