@@ -1250,6 +1250,6 @@ if __name__ == "__main__":
         show_footer()
     except Exception as e:
         st.error(f"Application error: {e}")
-        st.info("Please check your model imports and ensure all dependencies are installed.") = go.Figure()
+        st.info("Please check your model imports and ensure all dependencies are installed.") == go.Figure()
         fig_vol.add_trace(go.Scatter(x=vol_range*100, y=call_prices_vol, name='Call Option', 
                                    line=dict(color='green', width=3)))
