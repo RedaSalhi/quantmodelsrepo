@@ -33,9 +33,9 @@ class DataLoader:
             data = yf.download(tickers, period=period, progress=False)
             
             if len(tickers) == 1:
-                return data[['Adj Close']].rename(columns={'Adj Close': tickers[0]})
+                return data[['Close']].rename(columns={'Close': tickers[0]})
             else:
-                return data['Adj Close']
+                return data['Close']
                 
         except Exception as e:
             st.error(f"Error fetching stock data: {str(e)}")
@@ -135,7 +135,7 @@ class DataLoader:
             try:
                 data = yf.download(ticker, period=period, progress=False)
                 if not data.empty:
-                    commodity_data[name] = data['Adj Close']
+                    commodity_data[name] = data['Close']
             except:
                 continue
         
