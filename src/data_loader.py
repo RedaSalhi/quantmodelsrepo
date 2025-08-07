@@ -248,7 +248,7 @@ class MarketDataProcessor:
     def clean_data(data: pd.DataFrame, method: str = 'forward_fill') -> pd.DataFrame:
         """Clean market data by handling missing values"""
         if method == 'forward_fill':
-            return data.fillna(method='ffill').fillna(method='bfill')
+            return data.ffill().bfill()
         elif method == 'interpolate':
             return data.interpolate()
         else:
